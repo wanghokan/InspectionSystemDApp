@@ -21,19 +21,19 @@ const SideBar = ({ setFunctionAmount, selectCurrentFunction }) => {
 
     return (
         <div className='side-bar-container'>
-            <Link to='new_project' onClick={selectLinkHandle}>
+            <Link to='/new_project' onClick={selectLinkHandle}>
                 <SideBarItem className='sideBarItem' title='New Project' index={0} />
             </Link>
-            <Link to='import_inspection_items' onClick={selectLinkHandle}>
+            <Link to='/import_inspection_items' onClick={selectLinkHandle}>
                 <SideBarItem className='sideBarItem' title='Import Inspection Items' index={1} />
             </Link>
-            <Link to='new_sheet' onClick={selectLinkHandle}>
+            <Link to='/new_sheet' onClick={selectLinkHandle}>
                 <SideBarItem className='sideBarItem' title='New Sheet' index={2} />
             </Link>
-            <Link to='executing_state' onClick={selectLinkHandle}>
+            <Link to='/executing_state' onClick={selectLinkHandle}>
                 <SideBarItem className='sideBarItem' title='Executing State' index={3} />
             </Link>
-            <Link to='export_sheet' onClick={selectLinkHandle}>
+            <Link to='/export_sheet' onClick={selectLinkHandle}>
                 <SideBarItem className='sideBarItem' title='Export Sheet' index={4} />
             </Link>
         </div>

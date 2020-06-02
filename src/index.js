@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux'
 import './index.css';
 import App from './App';
@@ -11,9 +11,11 @@ import { store } from './redux/store';
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <Switch>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </Switch>
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')
