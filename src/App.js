@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Switch, Route, withRouter } from 'react-router';
+import { Switch, Route } from 'react-router';
+import { HashRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 
 import { loadWeb3 } from './web3/web3.utils';
@@ -35,35 +36,37 @@ const App = ({ fetchUserAccount, selectedProject }) => {
     <div className='app'>
       <Header />
       <SideBar />
-      <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/new_project' component={NewProject} />
-        <Route
-          path='/import_inspection_items'
-          render={props => (
-            <ImportInspectionItemsWithSelectedChecker isSelected={selectedProject != -1} {...props} />
-          )}
-        />
-        <Route
-          path='/new_sheet'
-          render={props => (
-            <NewSheetWithSelectedChecker isSelected={selectedProject != -1} {...props} />
-          )}
-        />
-        <Route path='/execute_inspection' component={ExecuteInspection} />
-        <Route
-          path='/executing_state'
-          render={props => (
-            <ExecutingStateWithSelectedChecker isSelected={selectedProject != -1} {...props} />
-          )}
-        />
-        <Route
-          path='/export_sheet'
-          render={props => (
-            <ExportSheetWithSelectedChecker isSelected={selectedProject != -1} {...props} />
-          )}
-        />
-      </Switch>
+      <HashRouter basename='/'>
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/new_project' component={NewProject} />
+          <Route
+            path='/import_inspection_items'
+            render={props => (
+              <ImportInspectionItemsWithSelectedChecker isSelected={selectedProject != -1} {...props} />
+            )}
+          />
+          <Route
+            path='/new_sheet'
+            render={props => (
+              <NewSheetWithSelectedChecker isSelected={selectedProject != -1} {...props} />
+            )}
+          />
+          <Route path='/execute_inspection' component={ExecuteInspection} />
+          <Route
+            path='/executing_state'
+            render={props => (
+              <ExecutingStateWithSelectedChecker isSelected={selectedProject != -1} {...props} />
+            )}
+          />
+          <Route
+            path='/export_sheet'
+            render={props => (
+              <ExportSheetWithSelectedChecker isSelected={selectedProject != -1} {...props} />
+            )}
+          />
+        </Switch>
+      </HashRouter>
     </div>
   )
 }
