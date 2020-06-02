@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/InspectionSystemDApp/static/css/main.889515a4.chunk.css",
-    "main.js": "/InspectionSystemDApp/static/js/main.cd0d6332.chunk.js",
-    "main.js.map": "/InspectionSystemDApp/static/js/main.cd0d6332.chunk.js.map",
+    "main.js": "/InspectionSystemDApp/static/js/main.ff3dc6b7.chunk.js",
+    "main.js.map": "/InspectionSystemDApp/static/js/main.ff3dc6b7.chunk.js.map",
     "runtime-main.js": "/InspectionSystemDApp/static/js/runtime-main.aff0cebb.js",
     "runtime-main.js.map": "/InspectionSystemDApp/static/js/runtime-main.aff0cebb.js.map",
     "static/js/2.221edbfe.chunk.js": "/InspectionSystemDApp/static/js/2.221edbfe.chunk.js",
     "static/js/2.221edbfe.chunk.js.map": "/InspectionSystemDApp/static/js/2.221edbfe.chunk.js.map",
     "index.html": "/InspectionSystemDApp/index.html",
-    "precache-manifest.29e0e891f0367fafe8bedd8ac3179ac6.js": "/InspectionSystemDApp/precache-manifest.29e0e891f0367fafe8bedd8ac3179ac6.js",
+    "precache-manifest.8b337b05f70976c22ae4964e85e34940.js": "/InspectionSystemDApp/precache-manifest.8b337b05f70976c22ae4964e85e34940.js",
     "service-worker.js": "/InspectionSystemDApp/service-worker.js",
     "static/css/main.889515a4.chunk.css.map": "/InspectionSystemDApp/static/css/main.889515a4.chunk.css.map",
     "static/js/2.221edbfe.chunk.js.LICENSE.txt": "/InspectionSystemDApp/static/js/2.221edbfe.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.aff0cebb.js",
     "static/js/2.221edbfe.chunk.js",
     "static/css/main.889515a4.chunk.css",
-    "static/js/main.cd0d6332.chunk.js"
+    "static/js/main.ff3dc6b7.chunk.js"
   ]
 }
