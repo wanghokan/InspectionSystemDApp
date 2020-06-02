@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/InspectionSystemDApp/static/css/main.889515a4.chunk.css",
+    "main.js": "/InspectionSystemDApp/static/js/main.df1d9e5f.chunk.js",
+    "main.js.map": "/InspectionSystemDApp/static/js/main.df1d9e5f.chunk.js.map",
+    "runtime-main.js": "/InspectionSystemDApp/static/js/runtime-main.aff0cebb.js",
+    "runtime-main.js.map": "/InspectionSystemDApp/static/js/runtime-main.aff0cebb.js.map",
+    "static/js/2.7b6e641f.chunk.js": "/InspectionSystemDApp/static/js/2.7b6e641f.chunk.js",
+    "static/js/2.7b6e641f.chunk.js.map": "/InspectionSystemDApp/static/js/2.7b6e641f.chunk.js.map",
+    "index.html": "/InspectionSystemDApp/index.html",
+    "precache-manifest.31f984477b71d20aa3b498012dd84035.js": "/InspectionSystemDApp/precache-manifest.31f984477b71d20aa3b498012dd84035.js",
+    "service-worker.js": "/InspectionSystemDApp/service-worker.js",
+    "static/css/main.889515a4.chunk.css.map": "/InspectionSystemDApp/static/css/main.889515a4.chunk.css.map",
+    "static/js/2.7b6e641f.chunk.js.LICENSE.txt": "/InspectionSystemDApp/static/js/2.7b6e641f.chunk.js.LICENSE.txt",
+    "static/media/company.baf3d84b.svg": "/InspectionSystemDApp/static/media/company.baf3d84b.svg",
+    "static/media/project.2d8f2f3d.svg": "/InspectionSystemDApp/static/media/project.2d8f2f3d.svg",
+    "static/media/user.a37279b6.svg": "/InspectionSystemDApp/static/media/user.a37279b6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aff0cebb.js",
+    "static/js/2.7b6e641f.chunk.js",
+    "static/css/main.889515a4.chunk.css",
+    "static/js/main.df1d9e5f.chunk.js"
+  ]
+}
