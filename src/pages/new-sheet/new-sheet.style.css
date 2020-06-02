@@ -1,0 +1,79 @@
+.new-sheet-page {
+    top: 6vw;
+    left: 20vw;
+    position: fixed;
+    width: 76.5vw;
+    height: 85%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.new-sheet-container {
+    border: 1px dashed rgb(100, 100, 100, 0.8);
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.new-sheet-basic-info-title {
+    padding: 5px;
+    color: rgb(150, 150, 150);
+}
+
+.new-sheet-number-and-project-name {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.new-sheet-number {
+    margin-right: 10px;
+}
+
+.new-sheet-work {
+    margin-left: 10px;
+}
+
+.new-sheet-contractor {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.contractor-input {
+    width: 300px;
+    margin-left: 1px;
+}
+
+.new-sheet-executing-timing {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.executing-timing-selector {
+    width: 150px;
+    margin-left: 1px;
+}
+
+.new-sheet-inspection-items-title-and-button {
+    padding: 5px;
+    color: rgb(150, 150, 150);
+    display: flex;
+    align-items: center;
+}
+
+.new-sheet-inspection-items-title {
+    margin-right: 30px;
+}
+
+.new-sheet-inspection-items {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.inspection-item {
+    padding-bottom: 5px;
+}
+
+.new-sheet-upload-button-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}

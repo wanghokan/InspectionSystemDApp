@@ -1,0 +1,27 @@
+.custom-file-uploader-container {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-file-uploader {
+    min-width: 30%;
+    width: auto;
+    padding: 3px;
+    border: 1px solid rgb(100, 100, 100, 0.5);
+    border-radius: 5%;
+    color: rgb(100, 100, 100, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.custom-file-uploader:hover {
+    border: 1px solid rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
+}
+
+.custom-file-input {
+    display: none;
+}

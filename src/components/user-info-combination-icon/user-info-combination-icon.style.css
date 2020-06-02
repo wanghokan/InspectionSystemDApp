@@ -1,0 +1,20 @@
+.user-info-combination-icon-container {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .user-info-combination-icon-container {
+        height: auto;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-icon-line {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+    }
+}

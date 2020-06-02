@@ -1,0 +1,99 @@
+.execute-inspection-page {
+    top: 10vw;
+    position: fixed;
+    width: 100vw;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.execute-inspection-work-selector-container {
+    padding-top: 20px;
+}
+
+.execute-inspection-selected-work-confirm-button-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.execute-inspection-sheet-container {
+    padding: 10px;
+}
+
+.execute-inspection-sheet-basic-info-title {
+    color: rgb(150, 150, 150);
+}
+
+.execute-inspection-sheet-number {
+    padding-left: 10px;
+    font-size: small;
+}
+
+.execute-inspection-sheet-project-name {
+    padding-left: 10px;
+    font-size: small;
+}
+
+.execute-inspection-sheet-work {
+    padding-left: 10px;
+    font-size: small;
+}
+
+.execute-inspection-sheet-contractor {
+    padding-left: 10px;
+    font-size: small;
+}
+
+.execute-inspection-sheet-executing-timing {
+    padding-left: 10px;
+    font-size: small;
+}
+
+.execute-inspection-sheet-executed-times {
+    padding-left: 10px;
+    font-size: small;
+}
+
+.execute-inspection-items-container {
+    padding-top: 10px;
+}
+
+.execute-inspection-items-title {
+    color: rgb(150, 150, 150);
+}
+
+.execute-inspection-items {
+    margin-top: 10px;
+}
+
+.execute-inspection-information-container {
+    padding-bottom: 10px;
+}
+
+.execute-inspection-result-and-photo {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.execution-inspection-result-selector{
+    width: 45%;
+}
+
+.execute-inspection-photo {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.execute-inspection-note-input {
+    padding: 5px;
+}
+
+.execute-inspection-upload-button-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}

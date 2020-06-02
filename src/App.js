@@ -1,26 +1,79 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { Switch, Route, withRouter } from 'react-router';
+import { connect } from 'react-redux';
+
+import { loadWeb3 } from './web3/web3.utils';
+import { fetchAccountAsync } from './redux/user/user-account/user-account.actions';
+
+import Header from './components/header/header.component';
+import SideBar from './components/side-bar/side-bar.component';
+import HomePage from './pages/homepage/homepage.component';
+import WithSelectedChecker from './components/with-selected-checker/with-selected-checker.component'
+import NewProject from './pages/new-project/new-project.component';
+import NewSheet from './pages/new-sheet/new-sheet.component';
+import ImportInspectionItems from './pages/import-inspection-items/import-inspection-items.component';
+import ExecuteInspection from './pages/execute-inspection/execute-inspection.component';
+import ExecutingState from './pages/executing-state/executing-state.component';
+import ExportSheet from './pages/export-sheet/export-sheet.component';
+
 import './App.css';
 
-function App() {
+const ImportInspectionItemsWithSelectedChecker = WithSelectedChecker(ImportInspectionItems)
+const NewSheetWithSelectedChecker = WithSelectedChecker(NewSheet)
+const ExecutingStateWithSelectedChecker = WithSelectedChecker(ExecutingState)
+const ExportSheetWithSelectedChecker = WithSelectedChecker(ExportSheet)
+
+const App = ({ fetchUserAccount, selectedProject }) => {
+
+  useEffect(() => {
+    console.log('app')
+    loadWeb3()
+    fetchUserAccount()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Header />
+      <SideBar />
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/new_project' component={NewProject} />
+        <Route
+          path='/import_inspection_items'
+          render={props => (
+            <ImportInspectionItemsWithSelectedChecker isSelected={selectedProject != -1} {...props} />
+          )}
+        />
+        <Route
+          path='/new_sheet'
+          render={props => (
+            <NewSheetWithSelectedChecker isSelected={selectedProject != -1} {...props} />
+          )}
+        />
+        <Route path='/execute_inspection' component={ExecuteInspection} />
+        <Route
+          path='/executing_state'
+          render={props => (
+            <ExecutingStateWithSelectedChecker isSelected={selectedProject != -1} {...props} />
+          )}
+        />
+        <Route
+          path='/export_sheet'
+          render={props => (
+            <ExportSheetWithSelectedChecker isSelected={selectedProject != -1} {...props} />
+          )}
+        />
+      </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+const mapStateToProps = state => ({
+  selectedProject: state.selectedProject.selectedProject
+})
+
+const mapDispatchToProps = dispatch => ({
+  fetchUserAccount: () => dispatch(fetchAccountAsync())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

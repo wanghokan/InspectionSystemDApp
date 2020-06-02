@@ -1,0 +1,32 @@
+/*
+.new-project-page {
+    top: 6vw;
+    left: 20vw;
+    position: fixed;
+    width: 76.5vw;
+    height: 100%;
+    padding: 20px;
+}
+
+.project-wbs {
+    width: 100%;
+}
+
+.wbs-header {
+    
+}
+
+.selected-work {
+    background-color: slategray;
+}
+
+@media screen and (max-width: 1000px) {
+    .new-project-page {
+        top: 15vw;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+}
+*/

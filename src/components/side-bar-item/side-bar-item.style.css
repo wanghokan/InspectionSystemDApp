@@ -1,0 +1,15 @@
+.side-bar-item {
+    color: black;
+    padding: 8px 16px;
+}
+
+.side-bar-item:hover {
+    background-color: rgb(150, 150, 150);
+    color: #f1f1f1;
+}
+
+.selected-side-bar-item {
+    padding: 8px 16px ;
+    background-color: rgb(100, 100, 100);
+    color: #f1f1f1;
+}

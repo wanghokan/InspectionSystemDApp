@@ -1,0 +1,43 @@
+.collapsible {
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    text-align: left;
+    outline: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    font-size: large;
+    padding-left: 15px;
+}
+
+.collapsible:hover {
+    border-bottom: 2px solid gray;
+    font-weight: 500; 
+}
+
+.content-container {
+    display: none;
+}
+
+.expanded-content-container {
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 98%;
+    height: auto;
+    min-height: 40px;
+    text-align: left;
+    outline: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    font-size: large;
+    padding-left: 25px;
+}
