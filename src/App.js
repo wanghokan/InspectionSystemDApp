@@ -33,10 +33,10 @@ const App = ({ fetchUserAccount, selectedProject }) => {
   }, [])
 
   return (
-    <HashRouter basename='/'>
-      <div className='app'>
-        <Header />
-        <SideBar />
+    <div className='app'>
+      <Header />
+      <SideBar />
+      <HashRouter basename='/'>
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/new_project' component={NewProject} />
@@ -66,8 +66,8 @@ const App = ({ fetchUserAccount, selectedProject }) => {
             )}
           />
         </Switch>
-      </div>
-    </HashRouter>
+      </HashRouter>
+    </div>
   )
 }
 
