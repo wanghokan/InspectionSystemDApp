@@ -14,8 +14,7 @@ const NewSheet = ({ account, projects, contract, selectedProject, fetchInspectio
 
     const uploadNewSheet = () => {
         const itemsState = new Array(inspectionItems.length).fill(0)
-        console.log(selectedProject, selectedWork, itemsState, timing, contractorName)
-        contract.methods.createSheet(selectedProject, selectedWork, itemsState, timing, contractorName).send({ from: account }).once("receipt", () => { console.log("receipt") })
+        contract.methods.createSheet(selectedProject, selectedWork, itemsState, timing, window.web3.utils.fromUtf8(contractorName)).send({ from: account }).once("receipt", () => { console.log("receipt") })
     }
 
     return (
