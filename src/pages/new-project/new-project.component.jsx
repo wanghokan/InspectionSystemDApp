@@ -21,7 +21,7 @@ const NewProject = ({ account, fileBuffer, contract }) => {
                 console.error(error)
                 return
             }
-            contract.methods.createProject(newProjectName, result[0].hash).send({ from: account }).once("receipt", () => { console.log("receipt") })
+            contract.methods.createProject(window.web3.utils.fromUtf8(newProjectName), result[0].hash).send({ from: account }).once("receipt", () => { console.log("receipt") })
         })
     }
 
